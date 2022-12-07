@@ -216,3 +216,13 @@ button.outlined {
     color: var(--off-white-color);
 }
 /* end cta section */
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: var(--dark-color);
+}
+/* end footer */
