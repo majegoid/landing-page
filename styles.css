@@ -1,8 +1,134 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --dark-bg-color: #1f2937;
+    --primary-color: #3882f6;
+    --text-white-1: #f9faf8;
+    --text-white-2: #e5e7eb;
+}
+
+/* global */
+/* css reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
-    background-color: #1f2937;
-    color: white;
+    color: var(--text-white-2);
+}
+
+a {
+    color: var(--text-white-2);
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-white-1);
+}
+/* end global */
+
+/* top-level layout */
+.header-section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-bg-color);
+    height: 30rem;
+    padding-top: 1rem;
+}
+
+
+/* end top-level layout */
+
+/* header section */
+.nav {
+            display: flex;
+    background-color: var(--dark-bg-color);
+    color: var(--text-white-2);
+}
+
+.nav div {
+    background-color: red;
 }
 
 .hero {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    height: 100%;
+    /* background-color: var(--dark-bg-color); */
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 0;
+    background-color: red;
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+.hero-image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 40rem;
+    background-color: gray;
+}
+
+.hero-main-text {
+    font-size: 4rem;
+    font-weight: extra-bold;
+    color: var(--text-white-1);
+}
+
+.hero-secondary-text {
+    font-size: 1.125rem;
+    color: var(--text-white-2);
+}
+
+.header-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-white-1);
+    margin-right: auto;
+}
+/* end header section */
+
+.information-header-text {
+
+}
+
+.quote-section {
+
+}
+
+.quote-text {
+
+}
+
+.hero {
+
 }
