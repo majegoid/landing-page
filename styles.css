@@ -32,8 +32,8 @@ button {
     background-color: var(--primary-color);
     border: none;
     border-radius: 0.5rem;
-    height: 2rem;
-    width: 8rem;
+    min-height: 2rem;
+    min-width: 8rem;
     font-size: 1rem;
     font-weight: bold;
     color: var(--text-white-1);
@@ -45,10 +45,9 @@ button {
     display: flex;
     flex-direction: column;
     background-color: var(--dark-bg-color);
-    height: 30rem;
-    padding-top: 1rem;
+    height: 40rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
-
 
 /* end top-level layout */
 
@@ -60,7 +59,11 @@ button {
 }
 
 .nav div {
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* width: 40%; */
+    /* background-color: red; */
 }
 
 .hero {
@@ -70,16 +73,8 @@ button {
     align-items: stretch;
     gap: 2rem;
     height: 100%;
+    padding: 10rem 0;
     /* background-color: var(--dark-bg-color); */
-}
-
-.hero-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1 1 0;
-    background-color: red;
 }
 
 .hero-image-container {
@@ -94,8 +89,18 @@ button {
     justify-content: center;
     align-items: center;
     height: 20rem;
-    width: 40rem;
+    width: 100%;
     background-color: gray;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1 1 0;
+    /* background-color: red; */
 }
 
 .hero-main-text {
@@ -117,7 +122,7 @@ button {
 }
 /* end header section */
 
-.information-header-text {
+/* .information-header-text {
 
 }
 
@@ -131,4 +136,4 @@ button {
 
 .hero {
 
-}
+} */
