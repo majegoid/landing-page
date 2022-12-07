@@ -2,8 +2,8 @@
     font-family: Arial, Helvetica, sans-serif;
     --dark-color: #1f2937;
     --primary-color: #3882f6;
-    --text-white-1: #f9faf8;
-    --text-white-2: #e5e7eb;
+    --off-white-color: #f9faf8;
+    --light-gray-color: #e5e7eb;
 }
 
 /* global */
@@ -19,11 +19,11 @@ html {
 }
 
 body {
-    color: var(--text-white-2);
+    color: var(--light-gray-color);
 }
 
 a {
-    color: var(--text-white-2);
+    color: var(--light-gray-color);
     text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ button {
     min-width: 8rem;
     font-size: 1rem;
     font-weight: bold;
-    color: var(--text-white-1);
+    color: var(--off-white-color);
 }
 /* end global */
 
@@ -58,13 +58,23 @@ button {
     color: var(--dark-color);
 }
 
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem;
+    padding: 0rem 24rem 0rem 24rem;
+    background-color: var(--light-gray-color);
+    color: var(--dark-color);
+}
+
 /* end top-level layout */
 
 /* header section */
 .nav {
             display: flex;
     background-color: var(--dark-color);
-    color: var(--text-white-2);
+    color: var(--light-gray-color);
 }
 
 .nav div {
@@ -115,18 +125,18 @@ button {
 .hero-main-text {
     font-size: 4rem;
     font-weight: extra-bold;
-    color: var(--text-white-1);
+    color: var(--off-white-color);
 }
 
 .hero-secondary-text {
     font-size: 1.125rem;
-    color: var(--text-white-2);
+    color: var(--light-gray-color);
 }
 
 .header-logo-text {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--text-white-1);
+    color: var(--off-white-color);
     margin-right: auto;
 }
 /* end header section */
@@ -164,18 +174,27 @@ button {
 }
 /* end testimonials section */
 
-/* .information-header-text {
-
+/* quote section */
+.quote-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.quote-section {
-
+.quote-section > div >  span {
+    display: inline-block;
 }
 
 .quote-text {
-
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: lighter;
 }
 
-.hero {
-
-} */
+.quote-author-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 4rem;
+}
+/* end quote section */
