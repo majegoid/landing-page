@@ -1,6 +1,6 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
-    --dark-bg-color: #1f2937;
+    --dark-color: #1f2937;
     --primary-color: #3882f6;
     --text-white-1: #f9faf8;
     --text-white-2: #e5e7eb;
@@ -44,9 +44,18 @@ button {
 .header-section {
     display: flex;
     flex-direction: column;
-    background-color: var(--dark-bg-color);
+    background-color: var(--dark-color);
     height: 40rem;
     padding: 1rem 15rem 0rem 15rem;
+}
+
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 40rem;
+    padding: 3rem 15rem 0rem 15rem;
+    color: var(--dark-color);
 }
 
 /* end top-level layout */
@@ -54,7 +63,7 @@ button {
 /* header section */
 .nav {
             display: flex;
-    background-color: var(--dark-bg-color);
+    background-color: var(--dark-color);
     color: var(--text-white-2);
 }
 
@@ -74,7 +83,7 @@ button {
     gap: 2rem;
     height: 100%;
     padding: 10rem 0;
-    /* background-color: var(--dark-bg-color); */
+    /* background-color: var(--dark-color); */
 }
 
 .hero-image-container {
@@ -121,6 +130,39 @@ button {
     margin-right: auto;
 }
 /* end header section */
+
+/* testimonials section */
+.testimonials-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex: 1;
+    width: 100%;
+    padding: 0rem 16rem 0rem 16rem;
+    margin-bottom: 8rem;
+}
+
+.testimonials-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 auto;
+    width: 10rem;
+}
+
+.testimonial-image-placeholder {
+    height: 10rem;
+    width: 10rem;
+    border: 0.25rem solid var(--primary-color);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-section > h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+/* end testimonials section */
 
 /* .information-header-text {
 
