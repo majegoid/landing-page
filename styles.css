@@ -46,7 +46,7 @@ button {
     flex-direction: column;
     background-color: var(--dark-bg-color);
     height: 40rem;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 15rem 0rem 15rem;
 }
 
 /* end top-level layout */
