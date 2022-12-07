@@ -124,9 +124,15 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 40rem;
+    /* height: 40rem; */
     padding: 3rem 15rem 0rem 15rem;
     color: var(--dark-color);
+}
+
+.testimonials-section > h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2.25rem;
 }
 
 .testimonials-container {
@@ -154,11 +160,6 @@ button {
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
-
-.testimonials-section > h2 {
-    margin-bottom: 3rem;
-    text-align: center;
-}
 /* end testimonials section */
 
 /* quote section */
@@ -166,8 +167,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30rem;
-    padding: 0rem 24rem 0rem 24rem;
+    padding: 5rem 24rem 5rem 24rem;
     background-color: var(--light-gray-color);
     color: var(--dark-color);
 }
@@ -183,7 +183,7 @@ button {
 }
 
 .quote-text {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-style: italic;
     font-weight: lighter;
 }
@@ -207,6 +207,7 @@ button {
 }
 
 .cta-section > div > h3 {
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     color: var(--off-white-color);
 }
